@@ -39,10 +39,10 @@
 
 # 3. Variable Declaring: const & let & var
 
-|      | const | let  |                         var                         |
-| :--: | :---: | :--: | :-------------------------------------------------: |
-|      |       |      | aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |
-|      |       |      |                                                     |
+|       | const |  let  |   var    |
+| :---: | :---: | :---: | :------: |
+| Scope | Block | Block | Function |
+|       |       |       |          |
 
 
 
