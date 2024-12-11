@@ -65,9 +65,115 @@
 # 5.Operators
 
 1. Arithmetic Operators:  used to perform mathematical operations
-   1. 11111
-   2. 1111
-2. Assignment Operators
-   1. 
-3. 
+
+   | Operator |          Description           |       Example       |
+   | :------: | :----------------------------: | :-----------------: |
+   |    +     |            Addition            |     5 + 2 -> 7      |
+   |    -     |          Subtraction           |      5- 2 -> 3      |
+   |    *     |         Multiplication         |     5 * 2 -> 10     |
+   |    /     |            Division            |    5 / 2 -> 2.5     |
+   |    %     | Modulus(remainder of division) |     5 % 2 -> 1      |
+   |    ++    |    Increment(increase by 1)    | let a = 5; a++ -> 6 |
+   |    --    |    Decrement(decrease by 1)    | let a = 5; a-- -> 4 |
+
+   
+
+2. Assignment Operators: used to assign values to variables
+
+   | Operator |     Description     |       Example       |
+   | :------: | :-----------------: | :-----------------: |
+   |    =     |     Assignment      |       x = 10        |
+   |    +=    |   Add and assign    | x += 5 -> x = x + 5 |
+   |    -=    | Subtract and assign | x -= 5 -> x = x - 5 |
+   |    *=    | Multiply and assign | x *= 5 -> x = x * 5 |
+   |    /+    |  Divide and assign  | x /= 5 -> x = x / 5 |
+   |    %=    | Modulus and assign  | x %= 5 -> x = x % 5 |
+
+   
+
+3. Comparison Operators: used to compare two values and return a boolean (true or false)
+
+   | Operator |           Description            |      Example       |
+   | :------: | :------------------------------: | :----------------: |
+   |    ==    |   Equal to (loose comparison)    |  5 == '5' -> true  |
+   |   ===    |   Equal to (strict comparison)   | 5 === '5' -> false |
+   |    !=    | Not equal to (loose comparison)  |  5 != '5' -> true  |
+   |   !==    | Not equal to (strict comparison) | 5 !== '5' -> false |
+   |    >     |            Great than            |   5 > 3 -> true    |
+   |    <     |            Less than             |   5 < 3 -> false   |
+   |    >=    |     Greater than or equal to     |   5 >= 5 -> true   |
+   |    <=    |      Less than or equal to       |  5 <= 3 -> false   |
+
+   
+
+   > What is the difference between == and === ?
+
+   |    Freture    |      == (Equality operator)       |      === (Strict equality operator)       |
+   | :-----------: | :-------------------------------: | :---------------------------------------: |
+   | Type Coercion |  Yes (performs type conversion)   |          No (no type comversion)          |
+   |  Strictness   | Less strict, compares only values | More strict, compares both value and type |
+
+   
+
+4. Logical Operators: used to perform logical operations, typically with boolean values
+
+   | Operator | Description |        Example         |
+   | :------: | :---------: | :--------------------: |
+   |    &&    | Logical AND | true && false -> false |
+   |    !     | Logical NOT |     !true -> false     |
+
+   
+
+5. Conditional (Ternary) Operator: a shorthand for  if-else statement
+
+   |         Operator          |                         Description                          |                   Example                    |
+   | :-----------------------: | :----------------------------------------------------------: | :------------------------------------------: |
+   | condition ? expr1 : expr2 | if condition is true, expr1 is returned, otherwise expr2 is returned | let result = (5 > 3) ? 'Yes' : 'No' -> 'Yes' |
+
+   
+
+6. Type Operators: used to check or change the type of a value
+
+   |  Operator  |                  Description                  |           Example           |
+   | :--------: | :-------------------------------------------: | :-------------------------: |
+   |   typeof   |         return the type of a variable         |    typeof 5 -> 'number'     |
+   | instanceof | checks if an object is an instance of a class | [] instanceof Array -> true |
+
+   
+
+7. Bitwise Operators: used to work on the binary representations of numbers
+
+   | Operator | Description |   Example    |
+   | :------: | :---------: | :----------: |
+   |    &     | Bitwise AND |  5 & 3 -> 1  |
+   |    <<    | Lest shift  | 5 << 1 -> 10 |
+
+   
+
+8. String Operators: used to manipulate strings
+
+   | Operator |       Description        |                       Example                       |
+   | :------: | :----------------------: | :-------------------------------------------------: |
+   |    +     |      concatenation       |       "Hello" + " " + "World" → "Hello World"       |
+   |    +=    | concatenation and assign | let str = "Hello"; str += " World"; → "Hello World" |
+
+   
+
+9. Spread and Rest Operators: used to handle collections of data
+
+   | Operator |                  Description                   |                           Example                            |
+   | :------: | :--------------------------------------------: | :----------------------------------------------------------: |
+   |   ...    | spread (unpacks elements from array or object) |      let arr = [1, 2, 3]; let newArr = [...arr, 4, 5];       |
+   |   ...    |      rest (collects remaining arguments)       | function sum(...numbers) { return numbers.reduce((a, b) => a + b);} |
+
+   
+
+10. 
+
+    | Operator | Description | Example |
+    | :------: | :---------: | :-----: |
+    |          |             |         |
+    |          |             |         |
+
+    
 
