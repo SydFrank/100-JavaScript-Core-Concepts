@@ -65,13 +65,8 @@
 # 5.Operators
 
 1. Arithmetic Operators:  used to perform mathematical operations
-   1. 
-   2. -
-   3. /
-   4. *
-   5. %
-   6. ++
-   7. --
+   1. 11111
+   2. 1111
 2. Assignment Operators
    1. 
 3. 
