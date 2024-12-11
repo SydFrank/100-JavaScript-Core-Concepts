@@ -1,1 +1,2 @@
-100 JavaScript Core Concepts
+# 1. Variables
+
