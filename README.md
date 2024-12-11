@@ -1,5 +1,3 @@
-# let & const & var
+#let & const & var
 
-
-
-# hello world
+#hello world
