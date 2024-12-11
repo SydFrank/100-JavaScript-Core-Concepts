@@ -39,12 +39,17 @@
 
 # 3. Variable Declaring: const & let & var
 
-|       | const |  let  |   var    |
-| :---: | :---: | :---: | :------: |
-| Scope | Block | Block | Function |
-|       |       |       |          |
+|                |          const          |           let           |      var       |
+| :------------: | :---------------------: | :---------------------: | :------------: |
+|     Scope      |          Block          |          Block          |    Function    |
+|  Reassignable  |           No            |           Yes           |      Yes       |
+| Re-declaration |           No            |           No            |      Yes       |
+|   Mutability   |    Immutable Bining     |         Mutable         |    Mutable     |
+|    Hoisting    | Yes(Temporal Dead Zone) | Yes(Temporal Dead Zone) | Yes(undefined) |
 
-
+> Q: What is hoisting ?
+>
+> Answer: Hoisting is JavaScript's  default behavior of moving declarations to the top.
 
 
 
