@@ -21,10 +21,6 @@
 6. Cannot contain spaces.
 7. Can use Unicode characters.
 
-## 1.3 Two ways of declaring variables
-
-
-
 # 2.Data Types
 
 ## 2.1 Primitive Data Types
@@ -40,6 +36,8 @@
 ## 2.2
 
 
+
+# 3. Variable Declaring: const & let & var
 
 
 
