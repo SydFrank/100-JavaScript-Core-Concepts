@@ -21,9 +21,25 @@
 6. Cannot contain spaces.
 7. Can use Unicode characters.
 
+## 1.3 Two ways of declaring variables
 
 
-# 2.let & const & var
+
+# 2.Data Types
+
+## 2.1 Primitive Data Types
+
+1. Number: used for decimals and integers
+2. String: used for text
+3. Boolean: used for taking decisions
+4. Undefined: a variable that has been declared but has not been assigned a value yet
+5. Null: empty value
+6. Symbol: value that is unique and immutable 
+7. BigInt: used for numbers larger than 2^53 -1
+
+## 2.2
+
+
 
 
 
