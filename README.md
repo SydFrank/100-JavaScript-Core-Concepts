@@ -256,3 +256,121 @@ Finished
 4. Objects: all objects are truthy, even if they are empty ({} or []).
 5. Functions: functions are truthy, even if they don't return anything.
 6. BigInt values: any non-zero BigInt
+
+
+
+# 8. Loops and iteration
+
+1. for statement
+
+   ```javascript
+   for (initialization; condition; afterthought)
+     statement
+   
+   ```
+
+2. do...while statement
+
+   ```javascript
+   do
+     statement
+   while (condition);
+   
+   ```
+
+3. while statement
+
+   ```javascript
+   while (condition)
+     statement
+   
+   ```
+
+4. labeled statement: lets you refer to it elsewhere in your program
+
+   ```javascript
+   label:
+     statement
+   
+   ```
+
+5. break statement
+
+   ```javascript
+   break;
+   break label;
+   
+   1. The first form of the syntax terminates the innermost enclosing loop or switch.
+   2. The second form of the syntax terminates the specified enclosing labeled statement.
+   ```
+
+   ```javascript
+   let x = 0;
+   let z = 0;
+   labelCancelLoops: while (true) {
+     console.log("Outer loops:", x);
+     x += 1;
+     z = 1;
+     while (true) {
+       console.log("Inner loops:", z);
+       z += 1;
+       if (z === 10 && x === 10) {
+         break labelCancelLoops;
+       } else if (z === 10) {
+         break;
+       }
+     }
+   }
+   
+   ```
+
+6. continue statement
+
+   ```javascript
+   continue;
+   continue label;
+   
+   ```
+
+7. for...in statetment: iterates a specified variable over all the enumerable properties (keys) of an object.
+
+   ```javascript
+   for (variable in object)
+     statement
+   
+   ```
+
+   ```javascript
+   let person = { name: "Alice", age: 30, city: "New York" };
+   
+   for (let key in person) {
+       console.log(key, person[key]);
+   }
+   // Output:
+   // name Alice
+   // age 30
+   // city New York
+   ```
+
+8. for...of statement: creates a loop iterating over iterable objects
+
+   ```javascript
+   for (variable of iterable)
+     statement
+   
+   ```
+
+   ```javascript
+   let numbers = [10, 20, 30];
+   
+   for (let value of numbers) {
+       console.log(value);
+   }
+   // Output:
+   // 10
+   // 20
+   // 30
+   ```
+
+
+
