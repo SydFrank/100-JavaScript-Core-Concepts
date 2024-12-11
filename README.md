@@ -57,3 +57,14 @@
 
 # 4. Variable Scope
 
+|   Scope Type   |                       Where it applies                       |                          Access                           |
+| :------------: | :----------------------------------------------------------: | :-------------------------------------------------------: |
+|  Global Scope  |  Variables/functions declared outside of any function/block  |           Accessible from anywhere in the code            |
+| Function Scope |        Variables declared with var inside a function         |           Accessible only within that function            |
+|  Block Scope   |     Variables declared with let or const inside a block      |             Accessible only within that block             |
+| Lexical Scope  | Refers to the functions's ability to access variables from its outer(enclosing) functions | Inner functions can access variables from outer functions |
+
+
+
+# 5.1
+
