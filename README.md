@@ -44,7 +44,7 @@
 |     Scope      |          Block          |          Block          |    Function    |
 |  Reassignable  |           No            |           Yes           |      Yes       |
 | Re-declaration |           No            |           No            |      Yes       |
-|   Mutability   |    Immutable Bining     |         Mutable         |    Mutable     |
+|   Mutability   |    Immutable Binding    |         Mutable         |    Mutable     |
 |    Hoisting    | Yes(Temporal Dead Zone) | Yes(Temporal Dead Zone) | Yes(undefined) |
 
 > Q: What is hoisting ?
