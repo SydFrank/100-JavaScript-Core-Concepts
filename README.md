@@ -40,7 +40,7 @@
 # 3. Variable Declaring: const & let & var
 
 |      | const | let  | var  |
-| :--: | ----- | ---- | ---- |
+| :--: | :---: | :--: | :--: |
 |      |       |      |      |
 |      |       |      |      |
 
