@@ -178,5 +178,62 @@
 
 # 6. Template Literals (Template strings)
 
+## 6.1 Concept
 
+> Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+
+## 6.2 String Interpolation
+
+```javascript
+let name = "John";
+let age = 30;
+let greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(greeting);  // Output: Hello, my name is John and I am 30 years old.
+
+```
+
+## 6.3 Multi-line String
+
+```javascript
+let multiLineString = `This is the first line
+This is the second line
+And this is the third line`;
+
+console.log(multiLineString);
+
+
+Output:
+This is the first line
+This is the second line
+And this is the third line
+```
+
+## 6.4 Tagged Templates
+
+> Tags allows you to parse template literals with a function
+
+> 1. first argument: an array of string values
+> 2. remaining arguments: related to the expressions
+
+```javascript
+function tag(strings, ...values) {
+    console.log(strings);  // The literal strings
+    console.log(values);   // The interpolated values
+    return "Finished";
+}
+
+let name = "Alice";
+let age = 25;
+let message = tag`Hello, my name is ${name} and I am ${age} years old.`;
+console.log(message);  // Output: Finished
+
+
+Output:
+[ 'Hello, my name is ', ' and I am ', ' years old.' ]
+[ 'Alice', 25 ]
+Finished
+
+```
+
+# 7. Type Conversion and Coercion
 
