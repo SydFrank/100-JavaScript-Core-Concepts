@@ -11,6 +11,16 @@
  // 'age' is the identifier
  ```
 
+## 1.2 Identifiers naming rules
+
+1. Starts with a letter, underscore(__) , or dollar sign($).
+2. Cannot start with a digit.
+3. Subsequent characters can include letters, underscore(__), dollar sign($), or digits.
+4. Case-sentitive.
+5. Cannot be a reserved keyword.
+6. Cannot contain spaces.
+7. Can use Unicode characters.
+
 
 
 
