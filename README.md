@@ -235,5 +235,24 @@ Finished
 
 ```
 
-# 7. Type Conversion and Coercion
+# 7. Truthy and Falsy Values
 
+## 7.1 Falsy Values
+
+1. false
+2. 0
+3. -0 (minus zero)
+4. 0n (BigInt zero)
+5. '', "", `` (empty string)
+6. null
+7. undefined
+8. NaN
+
+## 7.2 Truthy Values
+
+1. true
+2. Any non-zero number
+3. Non-empty string: any string that is not empty ("hello", " ").
+4. Objects: all objects are truthy, even if they are empty ({} or []).
+5. Functions: functions are truthy, even if they don't return anything.
+6. BigInt values: any non-zero BigInt
