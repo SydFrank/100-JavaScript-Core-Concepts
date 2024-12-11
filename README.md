@@ -168,12 +168,15 @@
 
    
 
-10. 
+10. Nullish Coalescing Operators: returns the right-hand operand if the left-hand operand is null or undefind
 
-    | Operator | Description | Example |
-    | :------: | :---------: | :-----: |
-    |          |             |         |
-    |          |             |         |
+    | Operator |    Description     |                Example                 |
+    | :------: | :----------------: | :------------------------------------: |
+    |    ??    | Nullish Coalescing | let x = null ?? 'default'; → 'default' |
 
     
+
+# 6. Template Literals (Template strings)
+
+
 
