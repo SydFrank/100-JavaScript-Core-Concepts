@@ -51,10 +51,6 @@
 >
 > Answer: Hoisting is JavaScript's  default behavior of moving declarations to the top.
 
-
-
-
-
 # 4. Variable Scope
 
 |   Scope Type   |                       Where it applies                       |                          Access                           |
@@ -66,5 +62,17 @@
 
 
 
-# 5.1
+# 5.Operators
+
+1. Arithmetic Operators:  used to perform mathematical operations
+   1. 
+   2. -
+   3. /
+   4. *
+   5. %
+   6. ++
+   7. --
+2. Assignment Operators
+   1. 
+3. 
 
