@@ -386,9 +386,89 @@ Finished
 4. Register Callback Functions
 5. Send the Request()
 
+```javascript
+const listElement = document.querySelector(".posts");
+const postTemplate = document.getElementById("single-post");
+
+// 1.Create an XMLHttpRequest Object
+const xhr = new XMLHttpRequest();
+
+// 2.Call the open() Method
+xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
+
+xhr.responseType = "json";
+
+// 4.Register Callback Functions
+xhr.onload = function () {
+  // const listOfPosts = JSON.parse(xhr.response);
+  const listOfPosts = xhr.response;
+  for (const post of listOfPosts) {
+    const postEl = document.importNode(postTemplate.content, true);
+    postEl.querySelector("h2").textContent = post.title.toUpperCase();
+    postEl.querySelector("p").textContent = post.body;
+    listElement.append(postEl);
+  }
+};
+
+// 5.Send the Request
+xhr.send();
+
+```
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Http</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="single-post">
+      <li class="post-item">
+        <h2></h2>
+        <p></p>
+        <button>DELETE</button>
+      </li>
+    </template>
+    <section id="new-post">
+      <form>
+        <div class="form-control">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="form-control">
+          <label for="content">Content</label>
+          <textarea rows="3" id="content"></textarea>
+        </div>
+        <button type="submit">ADD</button>
+      </form>
+    </section>
+    <section id="available-posts">
+      <button>FETCH POSTS</button>
+      <ul class="posts"></ul>
+    </section>
+  </body>
+</html>
+
+```
+
+## 10.2 JSON.parse(xhr.response) VS xhr.responseType = 'json'
+
+|        Feature        |        JSON.parse(xhr.response)         |     xhr.responseType = 'json'     |
+| :-------------------: | :-------------------------------------: | :-------------------------------: |
+|    Parsing Method     |    Manual parsing using JOSN.parse()    |     Automatic parsing by XHR      |
+|     Response Type     |  Working with the default 'text' type   |   Require responseType = "json"   |
+|    Error Handling     |  Throws SyntaxError if JOSN is invalid  |   Returns null for invalid JSON   |
+| Browser Compatibility |  Works in all browsers ( including IE)  | Supported only in modern browsers |
+|       Use Case        | When handling raw JSON or mixed formats |  When expecting a JSON response   |
 
 
 
+## 10.3 
 
 
 
