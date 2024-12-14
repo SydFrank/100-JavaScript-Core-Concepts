@@ -380,7 +380,11 @@ Finished
 
 ## 10.1 Steps to Use XMLHttpRequest
 
-
+1. Create an XMLHttpRequest Object
+2. Call the open() method
+3. Set Request Headers (Optional)
+4. Register Callback Functions
+5. Send the Request()
 
 
 
