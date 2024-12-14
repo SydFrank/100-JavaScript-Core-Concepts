@@ -257,8 +257,6 @@ Finished
 5. Functions: functions are truthy, even if they don't return anything.
 6. BigInt values: any non-zero BigInt
 
-
-
 # 8. Loops and iteration
 
 1. for statement
@@ -371,6 +369,66 @@ Finished
    // 20
    // 30
    ```
+
+
+
+# 9. Function 
+
+
+
+# 10. Working with Http Requests
+
+## 10.1 Steps to Use XMLHttpRequest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
