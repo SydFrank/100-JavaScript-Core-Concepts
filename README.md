@@ -505,7 +505,7 @@ fetchPosts();
 
 ```
 
-## Using the fetch() API
+##  10.4 Using the fetch() API
 
 ### 10.4.1 Concept
 
