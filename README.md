@@ -466,11 +466,68 @@ xhr.send();
 | Browser Compatibility |  Works in all browsers ( including IE)  | Supported only in modern browsers |
 |       Use Case        | When handling raw JSON or mixed formats |  When expecting a JSON response   |
 
+## 10.3 Promisifying Http Request (with XMLHttpRequest)
 
+```javascript
+const listElement = document.querySelector(".posts");
+const postTemplate = document.getElementById("single-post");
 
-## 10.3 
+function sendHttpRequest(method, url) {
+  const promise = new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.responseType = "json";
 
+    xhr.onload = function () {
+      resolve(xhr.response);
+    };
+    xhr.send();
+  });
+  return promise;
+}
 
+async function fetchPosts() {
+  const responseData = await sendHttpRequest(
+    "GET",
+    "https://jsonplaceholder.typicode.com/posts"
+  );
+
+  const listOfPosts = responseData;
+  for (const post of listOfPosts) {
+    const postEl = document.importNode(postTemplate.content, true);
+    postEl.querySelector("h2").textContent = post.title.toUpperCase();
+    postEl.querySelector("p").textContent = post.body;
+    listElement.append(postEl);
+  }
+}
+
+fetchPosts();
+
+```
+
+## Using the fetch() API
+
+### 10.4.1 Complete execution flowchart:
+
+```javascript
+fetch()  -> Returns a Promise
+   |
+   v
+Resolves to a Response object (response)
+   |
+   v
+Call response.json() -> Returns a Promise
+   |
+   v
+Parse JSON data -> JavaScript object (data)
+   |
+   v
+.then(data => ...) Callback
+   |
+   v
+.catch(error => ...) Error handling
+
+```
 
 
 
