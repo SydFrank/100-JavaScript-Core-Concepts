@@ -598,9 +598,16 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 ## 11.1 Initial Setup
 
 > 1. npm init -y
+>
 > 2. npm install webpack webpack-cli --save-dev
+>
 > 3. npx webpack
+>
 > 4. npx webpack --stats detailed  (optional)
+>
+>    ------------------------------------------------------
+>
+> 5. npm install css-loader style-loader --save-dev
 
 ## 11.2 Customize Webpack Configuration
 
@@ -635,6 +642,34 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 
 > 1. Loaders are tools that allow you to transform files or modules from one format to another before adding them to the bundle.
 > 2. By default, Webpack only understands JavaScript and JSON files.
+
+### 11.4.2 Execution Sequence
+
+> In Webpack, the execution of loaders follows a **right-to-left (or bottom-to-top)** sequence. This behavior is based on the Webpack's **loader chaining mechanism**
+
+```css
+{
+  test: /\.scss$/,
+  use: ["style-loader", "css-loader", "sass-loader"],
+},
+
+
+Execution Flow:
+1.sass-loader: (rightmost loader):
+	--Compiles the .scss file into a regular CSS string.
+		Input: SCSS source code
+		Output: CSS code
+
+2.css-loader(middle loader):
+	--Parses the CSS code, resolves @import and url() references, and transforms it into a JavaScript module.
+        Input: CSS code
+        Output: JavaScript module representing the CSS
+        
+3.style-loader(leftmost loader):
+	--Injects the final CSS (from the JavaScript module) into the DOM by adding it to a <style> tag in the HTML
+        Input: JavaScript Module
+        Output: Styles applied to the webpage
+```
 
 
 
