@@ -620,6 +620,14 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
   npm run build
   ```
 
+## 11.3 Asset Modules
+
+1. asset/resource
+2. asset/inline
+3. asset
+
+
+
 
 
 
