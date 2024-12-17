@@ -608,6 +608,10 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 >    ------------------------------------------------------
 >
 > 5. npm install css-loader style-loader --save-dev
+>
+> 6. npm install sass-loader sass --save-dev
+>
+> 7. npm install @babel/core babel-loader @babel/preset-env @babel/plugin-proposal-class-properties --save-dev
 
 ## 11.2 Customize Webpack Configuration
 
@@ -671,9 +675,15 @@ Execution Flow:
         Output: Styles applied to the webpage
 ```
 
+## 11.5 Plugins
 
 
 
+# 12. Babel
+
+## 12.1 Concept
+
+> Babel is a JavaScript compiler that transforms modern JavaScript code into a version that is compatible with older JavaScript environments, ensuring the code works across various browsers and runtime environments.
 
 
 
