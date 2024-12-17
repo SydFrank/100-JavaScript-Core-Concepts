@@ -593,9 +593,32 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 
 
 
+# 11. Webpack
 
+## 11.1 Initial Setup
 
+> 1. npm init -y
+> 2. npm install webpack webpack-cli --save-dev
+> 3. npx webpack
+> 4. npx webpack --stats detailed  (optional)
 
+## 11.2 Customize Webpack Configuration
+
+### 11.2.1 Add **"build": "webpack"**
+
+#### 11.2.1.1 Simplifies the Command
+
+- Without the script, you would need to run:
+
+  ```javascript
+  npx webpack
+  ```
+
+- After adding it, you only need to run:
+
+  ```javascript
+  npm run build
+  ```
 
 
 
