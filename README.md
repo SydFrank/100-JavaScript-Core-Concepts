@@ -622,11 +622,19 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 
 ## 11.3 Asset Modules
 
-1. asset/resource
-2. asset/inline
-3. asset
+> Asset Modules allow you to process assets like images, fonts, and media using four built-in types.
 
+1. asset/resource: copies the file to the output directory and returns the public URL.
+2. asset/inline: converts the file into Base64-encoded string and inlines it into your JavaScript bundle.
+3. asset: automatically decides whether to inline the asset as a Base64 string (like asset/inline) or to copy it to the output directory (like asset/resource) based on file size (default size limit: 8KB).
+4. asset/source: exports the raw source of a file as a string.
 
+## 11.4 Loaders
+
+### 11.4.1 Concept
+
+> 1. Loaders are tools that allow you to transform files or modules from one format to another before adding them to the bundle.
+> 2. By default, Webpack only understands JavaScript and JSON files.
 
 
 
